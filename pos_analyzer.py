@@ -65,7 +65,7 @@ def main():
         # open the image
         image = np.asarray(
             Image.open(
-                f"./pos_images/00cntl_temp_surface_{month if len(str(month)) >= 2 else ('0' + str(month))}_pm.png"
+                f"./ashoka_pos_extracredit/pos_images/390permian_temp_surface_{month if len(str(month)) >= 2 else ('0' + str(month))}_pm.png"
             ).convert("RGBA")
         )
 
@@ -77,7 +77,7 @@ def main():
         year_temps.append(mean_temp)
 
     # get the annual mean
-    print(sum(year_temps)/len(year_temps))
+    print(sum(year_temps) / len(year_temps))
 
 
 if __name__ == "__main__":
